@@ -1,8 +1,9 @@
 class PostsController < ApplicationController
-  helper_method :params
+
   
   def index
     @posts = Post.all
+    @authors = Author.all 
   end
 
   def show
